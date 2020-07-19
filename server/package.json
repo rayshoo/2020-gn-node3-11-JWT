@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "supervisor app",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prod": "npx pm2 start app.js -i 0",
+    "kill": "npx pm2 kill"
   },
   "keywords": [],
   "author": "",
