@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+html(lang="ko")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title API Token 생성
+  body
+    form(action="/token/save" method="post" name="tokenForm")
+      input(type="text" name="userid" placeholder="아이디")
+      input(type="text" name="domain" placeholder="도메인")
+      button API Key 생성/확인
+    .key-wrap
+      .domain
+      .key
